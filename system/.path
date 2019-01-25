@@ -1,0 +1,76 @@
+#export PATH=$PATH:/Users/Sean/bin
+
+#  Setting PATH so that /usr/local/bin occurs before /usr/bin so that  programs provided by Homebrew will be used
+export PATH=/usr/local/bin:$PATH
+export PATH=$PATH:/usr/local/sbin
+export LIBPREFIX="/opt/local"
+#  automake search path
+export CPATH="$LIBPREFIX/include"
+#  configure search path
+export CPPFLAGS="-I$LIBPREFIX/include"
+#  compiler arguments
+export CFLAGS="-O3 -Wall"
+export CXXFLAGS="$CFLAGS"
+
+# Eigen's path
+#export PATH=/Users/Sean/Library/eigen-eigen-2249f9c22fe8/Eigen:$PATH
+
+#  PSI4 User Configuration
+#export PSI=/usr/local/psi4_2014.9
+#PATH=$PSI/bin:$PATH ; export PATH
+#export PSI_SCRATCH=/tmp
+
+# PSI4 User Configuration
+export PATH=$HOME/Programs/psi4/psi4/objdir-openmp/stage/usr/local/psi4/bin:$PATH
+
+# PATH of my scripts
+export PATH=$HOME/bin:$PATH
+
+# Use Brew installed python
+export PATH=/usr/local/opt/python/libexec/bin:$PATH
+
+# Add Andreas' meinsum library
+export PYTHONPATH=$HOME/Dropbox/QM/PSI4data/Andreas/meinsum:$PYTHONPATH
+export PYTHONPATH=$HOME/Dropbox/QM/PSI4data/Andreas/dct:$PYTHONPATH
+
+# Add TexLive modules
+export PATH=/Library/TeX/Distributions/TeXLive-2014.texdist/Contents/Programs/texbin:$PATH
+
+# Add tiledarray library
+export PATH=$HOME/Programs/tiledarray/source:$PATH
+export PATH=$HOME/Programs/tiledarray/install/include:$PATH
+export MV2_ENABLE_AFFINITY=0
+
+# Add mpqc library
+export PATH=/Users/xiaowang/Programs/mpqc4/build/src/bin:$PATH
+export PATH=/Users/xiaowang/Programs/mpqc4/build/src/bin/mpqc:$PATH
+
+# Add libint
+export PATH=/Users/xiaowang/Programs/libint2/build-opt/tests/hartree-fock:$PATH
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/rubies/ruby-2.4.1/bin"
+export PATH="$PATH:$HOME/.rvm/bin"
+source $HOME/.rvm/scripts/rvm
+
+# Add Rust installer: cargo to PATH
+export PATH="$HOME/.cargo/bin:$PATH"
+
+# Source crystal environments
+source $HOME/cry17.bashrc
+# Load intel MKL for crystal to run
+source $HOME/bin/intel.sh
+
+# Add yapf to PYTHONPATH and PATH
+export PYTHONPATH=$HOME/Programs/yapf:$PYTHONPATH
+# Add pyscf library
+export PYTHONPATH=$HOME/Programs/PySCF:$PYTHONPATH
+
+# Add XTerm
+export PATH=/opt/X11/bin:$PATH
+
+# Add Wannier90
+export PATH=/Users/xiaowang/Programs/wannier90/wannier90-2.1.0:$PATH
+
+# Add anaconda
+export PATH=/anaconda3/bin:$PATH

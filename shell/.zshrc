@@ -52,7 +52,10 @@ SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
 # Source a shared alias file
-source $HOME/.zsh/.aliases
+source $HOME/.alias
 
 # Source a shared path file
-source $HOME/.zsh/.paths
+source $HOME/.path
+
+# Source a shared script file
+source $HOME/.script.sh

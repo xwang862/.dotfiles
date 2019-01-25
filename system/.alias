@@ -1,0 +1,26 @@
+alias voltron='ssh -Y xiao@voltron.ccqc.uga.edu'
+alias vortex='ssh -Y xiao@vortex.ccqc.uga.edu'
+alias vortexX='ssh -X xiao@vortex.ccqc.uga.edu'
+alias hopper='ssh -Y xiaowang@hopper.nersc.gov'
+alias edison='ssh -Y xiaowang@edison.nersc.gov'
+alias vulcan='ssh -Y xwang862@vulcan.ccqc.uga.edu'
+
+alias la='ls -a'
+alias ll='ls -l'
+alias lla='ls -la'
+
+alias dotar='tar -zcvf foo.tar.gz *'
+alias untar='tar -zxvf *.tgz'
+
+alias vio='vi output.dat'
+alias vii='vi input.dat'
+alias viz='vi ZMAT'
+alias to='tail output.dat' 
+
+alias ds='du -sh *'
+
+alias mpqc-release='~/Programs/mpqc4/build-release/src/bin/mpqc/mpqc'
+alias mpqc-ref='~/Programs/mpqc4-ref/build-release/src/bin/mpqc/mpqc'
+
+alias molden='~/Programs/molden/molden5.7/molden'
+alias gmolden='~/Programs/molden/molden5.7/gmolden'
