@@ -1,5 +1,5 @@
 " activate pathogen 
-execute pathogen#infect()
+"execute pathogen#infect()
 
 if has('syntax') && (&t_Co > 2)
   syntax on
