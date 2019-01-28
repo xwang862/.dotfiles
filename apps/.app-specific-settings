@@ -1,0 +1,6 @@
+###########################
+# Program: PySCF
+###########################
+
+# Add pyscf path to PYTHONPATH so that it can be found by python import
+export PYTHONPATH=$HOME/Programs/pyscf/pyscf-source:$PYTHONPATH
